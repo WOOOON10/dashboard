@@ -1,0 +1,112 @@
+/* 공통 스타일 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+
+
+/* 대시보드 영역 */
+#dashboard {
+  background: #e8f0fe;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 20px auto;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+
+
+.grid-stack {
+  width: 100%;        /* 부모의 가로폭을 꽉 채움 */
+  max-width: 1000px;  /* 최대 너비 지정 가능 */
+  margin: 10;     /* 가운데 정렬 */
+}
+
+
+
+/* GridStack 아이템 기본 스타일 */
+.grid-stack-item-content {
+  border: 2px solid #007BFF;
+  background-color: #D0F0FF;
+  box-sizing: border-box;
+  padding: 100px;
+  height: 100%; /* 위젯 높이 꽉 채우기 */
+}
+
+
+/* 시계 텍스트 스타일 */
+#clock-display {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+/* 메모 텍스트 영역 */
+.widget-content textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* 할 일 목록 */
+.widget-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+.grid-stack-item-content {
+  overflow: visible !important; /* 내부 스크롤 없애기 */
+  height: 100%;                 /* 부모 높이 꽉 채우기 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+/* 제목 스타일 */
+.widget-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 메모 박스 크기 고정, 리사이즈 및 스크롤 제거 */
+.widget-content textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* 시계 표시 */
+#clock-display {
+  font-size: 2.5rem;
+  text-align: center;
+  user-select: none;
+}
+
