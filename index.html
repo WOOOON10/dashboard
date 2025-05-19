@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Dashboard - GridStack Latest</title>
-
-  <!-- GridStack CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/gridstack@latest/dist/gridstack.min.css" rel="stylesheet" />
+  <title>드래그 위젯 겹침 자동 재배치</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h2>드래그 중 겹침 허용, 놓을 때 가장 가까운 빈 자리로 재배치</h2>
 
-  <!-- 대시보드 -->
-  <div id="dashboard">
-    <div class="grid-stack"></div>
+  <div id="grid">
+  <div id="w1" class="widget clock-widget">
+    <div class="widget-title">CLOCK</div>
+    <div class="content" id="clock-content">--:--:--</div>
   </div>
+  <div id="w2" class="widget memo-widget">
+    <div class="widget-title">MEMO</div>
+    <textarea class="widget-memo" placeholder="메모를 작성하세요..."></textarea>
+  </div>
+  <div id="w3" class="widget todo-widget">
+    <div class="widget-title">TODO</div>
+    <ul id="todo-list" class="todo-list"></ul>
+    <input type="text" id="todo-input" placeholder="할 일 추가..." />
+  </div>
+</div>
 
-  <!-- GridStack 최신 스크립트 -->
-  <script src="https://cdn.jsdelivr.net/npm/gridstack@latest/dist/gridstack.all.js"></script>
 
-  <!-- 내 스크립트 -->
   <script src="script.js"></script>
 </body>
 </html>
