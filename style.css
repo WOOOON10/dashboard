@@ -56,6 +56,34 @@ body {
   top: 400px;
 }
 
+.weather-widget {
+  width: 180px;
+  height: 180px;
+  left: 0;
+  top: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.exchange-widget {
+  width: 180px;
+  height: 180px;
+  left: 240px; /* 200px에서 240px로 조정 (그리드 칸 맞춤) */
+  top: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/*위젯 구성*/
 
 .widget-title {
   font-weight: bold;
@@ -132,4 +160,25 @@ body {
   font-size: 20px;
   font-family: monospace;
   width: 100%;
+}
+
+
+.exchange-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.exchange-widget li {
+  padding: 6px 0;
+  font-size: 18px;
+  user-select: none;
+}
+
+.weather-widget .content,
+.exchange-widget .content {
+  font-size: 16px;
+  width: 100%;
+  flex-grow: 1;
 }
