@@ -9,9 +9,7 @@ body {
   width: 960px;
   height: 720px;
   border: 2px solid #000000;
-  background-image:
-    linear-gradient(to right, #ffffff 1px, transparent 1px),
-    linear-gradient(to bottom, #fafafa 1px, transparent 1px);
+
   background-size: 60px 60px;
 }
 
